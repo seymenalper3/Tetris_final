@@ -10,6 +10,8 @@ commonly used Color objects defined in the color module.
 import time
 import os
 import sys
+import color
+import string
 
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = 'hide'
 import pygame
@@ -19,52 +21,32 @@ import pygame.font
 import tkinter as Tkinter
 import tkinter.messagebox as tkMessageBox
 import tkinter.filedialog as tkFileDialog
-	
+
 #-----------------------------------------------------------------------
 
 # Define colors so clients need not import the color module.
-try:
-    from color import WHITE
-    from color import BLACK
-    from color import RED
-    from color import GREEN
-    from color import BLUE
-    from color import CYAN
-    from color import MAGENTA
-    from color import YELLOW
-    from color import DARK_RED
-    from color import DARK_GREEN
-    from color import DARK_BLUE
-    from color import GRAY
-    from color import DARK_GRAY
-    from color import LIGHT_GRAY
-    from color import ORANGE
-    from color import VIOLET
-    from color import PINK
-    from color import BOOK_BLUE
-    from color import BOOK_LIGHT_BLUE
-    from color import BOOK_RED
-except ModuleNotFoundError:
-    from color import WHITE
-    from color import BLACK
-    from color import RED
-    from color import GREEN
-    from color import BLUE
-    from color import CYAN
-    from color import MAGENTA
-    from color import YELLOW
-    from color import DARK_RED
-    from color import DARK_GREEN
-    from color import DARK_BLUE
-    from color import GRAY
-    from color import DARK_GRAY
-    from color import LIGHT_GRAY
-    from color import ORANGE
-    from color import VIOLET
-    from color import PINK
-    from color import BOOK_BLUE
-    from color import BOOK_LIGHT_BLUE
-    from color import BOOK_RED
+
+from color import WHITE
+from color import BLACK
+from color import RED
+from color import GREEN
+from color import BLUE
+from color import CYAN
+from color import MAGENTA
+from color import YELLOW
+from color import DARK_RED
+from color import DARK_GREEN
+from color import DARK_BLUE
+from color import GRAY
+from color import DARK_GRAY
+from color import LIGHT_GRAY
+from color import ORANGE
+from color import VIOLET
+from color import PINK
+from color import BOOK_BLUE
+from color import BOOK_LIGHT_BLUE
+from color import BOOK_RED
+
 
 #-----------------------------------------------------------------------
 
@@ -78,7 +60,7 @@ _DEFAULT_YMIN = 0.0
 _DEFAULT_YMAX = 1.0
 _DEFAULT_CANVAS_SIZE = 512
 _DEFAULT_PEN_RADIUS = .005  # Maybe change this to 0.0 in the future.
-_DEFAULT_PEN_COLOR = BLACK
+_DEFAULT_PEN_COLOR = color.BLACK
 
 _DEFAULT_FONT_FAMILY = 'Helvetica'
 _DEFAULT_FONT_SIZE = 12

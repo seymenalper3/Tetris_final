@@ -49,6 +49,7 @@ class Color:
 
     #-------------------------------------------------------------------
 
+
     def __str__(self):
         """
         Return the string equivalent of self, that is, a
