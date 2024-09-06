@@ -32,9 +32,8 @@ Tetris is one of the most iconic and well-known puzzle games where players aim t
 
 ## Technologies Used
 
-- **Language**: [Specify programming language, e.g., Java, Python, C++]
-- **Framework/Engine**: [If any game development framework or engine was used]
-- **Libraries**: [List any external libraries used]
+- **Language**: [Python]
+- **Libraries**: [pygame]
 
 ## How to Play
 
