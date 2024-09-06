@@ -94,7 +94,7 @@ Here are some screenshots of the game in action:
 
 - **Main Game Interface**:
 
-  ![Game Screenshot](./images/tetris_screenshot.png)  <!-- Replace with actual image path -->
+  ![Game Screenshot](./images/tetris_screenshot.jpg)  <!-- Replace with actual image path -->
 
 ## Contributing
 
